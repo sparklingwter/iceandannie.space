@@ -8,6 +8,7 @@
     </title>
     <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%22100%22&gt;🌎&lt;/text&gt;&lt;/svg&gt;"><!-- Custom Styles -->
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
   </head>
   <body class="light">
     <!-- Change to "dark" for dark mode -->
@@ -33,7 +34,7 @@
               </li>
             </ul>
           </nav>
-        </div><button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+        </div>
       </div>
     </header>
     <main>
@@ -143,18 +144,6 @@
           © 2025 ice and annie dot blog
         </p>
       </div>
-    </footer><!-- Theme toggle script -->
-    <script>
-        function toggleTheme() {
-            const body = document.body;
-            const toggleBtn = document.querySelector('.theme-toggle');
-            const isDark = body.classList.toggle('dark');
-            if (isDark) {
-                toggleBtn.textContent = '🌞';
-            } else {
-                toggleBtn.textContent = '🌙';
-            }
-        }
-    </script>
+    </footer>
   </body>
 </html>

@@ -5,7 +5,7 @@
   --card-foreground: #0f1419;
   --popover: #ffffff;
   --popover-foreground: #0f1419;
-  --primary: #1e9df1;
+  --primary: #59a4d6;
   --primary-foreground: #ffffff;
   --secondary: #0f1419;
   --secondary-foreground: #ffffff;
@@ -64,7 +64,7 @@
   --card-foreground: #d9d9d9;
   --popover: #000000;
   --popover-foreground: #e7e9ea;
-  --primary: #1c9cf0;
+  --primary: #1c9bf093;
   --primary-foreground: #ffffff;
   --secondary: #f0f3f4;
   --secondary-foreground: #0f1419;
@@ -186,6 +186,9 @@ body {
 
 /* Header */
 header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background: var(--primary);
   color: var(--primary-foreground);
   padding: 4px 0;
@@ -305,4 +308,34 @@ footer {
 /* Smooth scroll */
 html {
   scroll-behavior: smooth;
+}
+
+/* Return Home Button */
+.return-home {
+  display: inline-block;
+  margin: 20px 0 20px 20px;
+  padding: 10px 20px;
+  background: var(--primary, #1e9df1);
+  color: var(--primary-foreground, #fff);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.return-home:hover {
+  background: var(--accent, #e3ecf6);
+  color: var(--accent-foreground, #1e9df1);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  background: none;
+  border: none;
+  box-shadow: 20px;
+  cursor: pointer;
+  font-size: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  align-self: center;
 }
