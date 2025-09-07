@@ -1,0 +1,16 @@
+{
+
+  "scripts": {
+    "tidy": "find . -type f -name \"*.html\" -not -path \"./node_modules/*\" -print0 | xargs -0 tidy -config ./.tidyrc -modify",
+    "format": "prettier --write \"**/*.{html,css,js,json,md}\"",
+    "fix": "npm run tidy && npm run format"
+  }
+,
+  "devDependencies": {
+    "eslint": "^9.35.0",
+    "eslint-plugin-html": "^8.1.3",
+    "htmlhint": "^1.6.3",
+    "js-beautify": "^1.15.4",
+    "prettier": "^3.6.2"
+  }
+}

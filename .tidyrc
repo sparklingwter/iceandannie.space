@@ -1,0 +1,15 @@
+quiet: yes
+show-warnings: yes
+indent: yes
+indent-spaces: 2
+wrap: 0
+vertical-space: no
+force-output: yes
+tidy-mark: no
+doctype: auto
+output-html: yes
+drop-empty-elements: no
+merge-divs: auto
+merge-spans: auto
+new-inline-tags: svg
+new-blocklevel-tags: section,article,header,footer,nav,main

@@ -1,132 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ice and annie dot blog</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%22100%22>🌎</text></svg>">
-
-
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body class="light"> <!-- Change to "dark" for dark mode -->
- <body class="light">
-  <header>
-    <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
-      <div>
-        <h1>ice and annie dot blog</h1>
-        <nav>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      ice and annie dot blog
+    </title>
+    <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%22100%22&gt;🌎&lt;/text&gt;&lt;/svg&gt;"><!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="light">
+    <!-- Change to "dark" for dark mode -->
+    <header>
+      <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
+        <div>
+          <h1>
+            ice and annie dot blog
+          </h1>
+          <nav>
+            <ul>
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#gallery">Gallery</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div><button class="theme-toggle" onclick="toggleTheme()">🌙</button>
       </div>
-      <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
-    </div>
-  </header>
+    </header>
+    <main>
+      <!-- Home Section -->
+      <section id="home">
+        <div class="container">
+          <h2>
+            Welcome!
+          </h2>
+          <p>
+            Howdy! This is our memory lanes of trips and restaurants that we love.
+          </p>
+        </div>
+      </section><!-- About Section -->
+      <section id="about">
+        <div class="container">
+          <h2>
+            About Us
+          </h2>
+          <p>
+            ✈️ Passport in one hand
+          </p>🍡 Snack in the other
+          <p></p>
+          <div class="container">
+            <div class="gallery-grid">
+              <div class="card">
+                <img src="images/icegpt.png" alt="intarat cook egg">
+                <h3>
+                  intarat cook egg (ice)
+                </h3>
+                <p>
+                  goes by ice, an food connoisseur that can't eat a lot
+                </p>
+              </div>
+              <div class="card">
+                <img src="images/anniegpt.png" alt="annie win">
+                <h3>
+                  annie win
+                </h3>
+                <p>
+                  tu nu win, an avid hiker that sings abc
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- Gallery Section -->
+      <section id="gallery">
+        <div class="container">
+          <h2>
+            Gallery
+          </h2>
+          <div class="gallery-grid">
+            <div class="card">
+              <a href="pensacola.html" style="text-decoration:none; color:inherit;"><img src="images/IMG_7266.jpeg" alt="Pensacola">
+              <h3>
+                Pensacola
+              </h3>
+              <p>
+                Our first real trip together!
+              </p></a>
+            </div>
+            <div class="card">
+              <a href="alaska.html" style="text-decoration:none; color:inherit;"><img src="images/IMG_8205.jpeg" alt="Alaska">
+              <h3>
+                Alaska
+              </h3>
+              <p>
+                The most unique experience in 7 days
+              </p></a>
+            </div>
+            <div class="card">
+              <a href="colorado.html" style="text-decoration:none; color:inherit;"><img src="images/IMG_9215.jpeg" alt="Colorado">
+              <h3>
+                Colorado
+              </h3>
+              <p>
+                Simply majestic.
+              </p></a>
+            </div>
+            <div class="card">
+              <a href="california.html" style="text-decoration:none; color:inherit;"><img src="images/DJI_20250816_154248_984.JPG" alt="California">
+              <h3>
+                California
+              </h3>
+              <p>
+                Sunshine and stunning coastlines
+              </p></a>
+            </div>
+          </div>
+        </div>
+      </section><!-- Contact Section -->
+      <section id="contact">
+        <div class="container">
+          <h2>
+            More
+          </h2>
+          <p>
+            Catch us on instagram @iceandannie
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <p>
+          © 2025 ice and annie dot blog
+        </p>
+      </div>
+    </footer><!-- Theme toggle script -->
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const toggleBtn = document.querySelector('.theme-toggle');
+            const isDark = body.classList.toggle('dark');
+            if (isDark) {
+                toggleBtn.textContent = '🌞';
+            } else {
+                toggleBtn.textContent = '🌙';
+            }
+        }
+    </script>
   </body>
-  
-  <main>
-    <!-- Home Section -->
-    <section id="home">
-      <div class="container">
-        <h2>Welcome!</h2>
-        <p>Howdy! This is our memory lanes of trips and restaurants that we love.</p>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-      <div class="container">
-        <h2>About Us</h2>
-        <p> ✈️ Passport in one hand </p>
-            🍡 Snack in the other  </p>
-      <div class="container">
-      <div class="gallery-grid">
-        <div class="card">
-          <img src="images/icegpt.png" alt="intarat cook egg">
-          <h3>intarat cook egg (ice)</h3>
-          <p>goes by ice, an food connoisseur that can't eat a lot </p>
-        </div>
-        <div class="card">
-          <img src="images/anniegpt.png" alt="annie win">
-          <h3>annie win</h3>
-          <p>tu nu win, an avid hiker that sings abc</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Gallery Section -->
-  <section id="gallery">
-  <div class="container">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <div class="card">
-        <a href="pensacola.html" style="text-decoration:none; color:inherit;">
-          <img src="images/IMG_7266.jpeg" alt="Pensacola">
-          <h3>Pensacola</h3>
-          <p>Our first real trip together!</p>
-        </a>
-      </div>
-      <div class="card">
-        <a href="alaska.html" style="text-decoration:none; color:inherit;">
-          <img src="images/IMG_8205.jpeg" alt="Alaska">
-          <h3>Alaska</h3>
-          <p> The most unique experience in 7 days</p>
-        </a>
-      </div>
-      <div class="card">
-        <a href="colorado.html" style="text-decoration:none; color:inherit;">
-          <img src="images/IMG_9215.jpeg" alt="Colorado">
-          <h3>Colorado</h3>
-          <p>Simply majestic.</p>
-        </a>
-      </div>
-      <div class="card">
-        <a href="california.html" style="text-decoration:none; color:inherit;">
-          <img src="images/DJI_20250816_154248_984.JPG" alt="California">
-          <h3>California</h3>
-          <p>Sunshine and stunning coastlines</p>
-        </a>
-      
-    </div>
-  </div>
-</section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="container">
-        <h2>More</h2>
-        <p>Catch us on instagram @iceandannie</p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 ice and annie dot blog</p>
-    </div>
-  </footer>
-
-    <!-- Theme toggle script -->
-  <script>
-    function toggleTheme() {
-      const body = document.body;
-      const toggleBtn = document.querySelector('.theme-toggle');
-      const isDark = body.classList.toggle('dark');
-      if (isDark) {
-        toggleBtn.textContent = '🌞';
-      } else {
-        toggleBtn.textContent = '🌙';
-      }
-    }
-  </script>
-
-
-</body>
 </html>
-
