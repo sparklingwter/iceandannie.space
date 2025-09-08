@@ -1,0 +1,7 @@
+{
+  "extends": ["eslint:recommended", "plugin:html/recommended"],
+  "plugins": ["html"],
+  "rules": {
+    "no-unexpected-multiline": "off"
+  }
+}
