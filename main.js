@@ -45,4 +45,42 @@ window.addEventListener("DOMContentLoaded", function () {
       : "dark";
     setTheme(newTheme);
   });
+
+  // Lightbox: click a gallery photo (not one that's a link to another page) to view it full-size
+  const overlay = document.createElement("div");
+  overlay.className = "lightbox-overlay";
+  overlay.innerHTML =
+    '<img alt="" /><button class="lightbox-close" aria-label="Close">&times;</button>';
+  document.body.appendChild(overlay);
+  const overlayImg = overlay.querySelector("img");
+
+  function openLightbox(src, alt) {
+    overlayImg.src = src;
+    overlayImg.alt = alt || "";
+    overlay.classList.add("active");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeLightbox() {
+    overlay.classList.remove("active");
+    document.body.style.overflow = "";
+  }
+
+  document
+    .querySelectorAll(".gallery-grid img, .card img")
+    .forEach(function (img) {
+      if (img.closest("a")) return; // leave nav thumbnails alone
+      img.addEventListener("click", function () {
+        openLightbox(img.currentSrc || img.src, img.alt);
+      });
+    });
+
+  overlay.addEventListener("click", function (e) {
+    if (e.target === overlayImg) return;
+    closeLightbox();
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") closeLightbox();
+  });
 });
