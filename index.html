@@ -1,148 +1,291 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-      ice and annie dot blog
-    </title>
-    <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%22100%22&gt;🌎&lt;/text&gt;&lt;/svg&gt;"><!-- Custom Styles -->
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
-  </head><!-- Change to "dark" for dark mode -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ice and annie dot blog</title>
+    <meta
+      name="description"
+      content="Ice and Annie's travel blog — memory lanes of the trips and restaurants we love."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ice and annie dot blog" />
+    <meta
+      property="og:description"
+      content="Memory lanes of the trips and restaurants we love."
+    />
+    <meta
+      property="og:image"
+      content="https://iceandannie.space/images/DJI_20250816_154248_984.JPG"
+    />
+    <meta property="og:url" content="https://iceandannie.space/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%22100%22&gt;🌎&lt;/text&gt;&lt;/svg&gt;"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script></head
+  ><!-- Change to "dark" for dark mode -->
   <body>
     <header>
-      <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
-        <div>
-          <h1>
-            ice and annie dot blog
-          </h1>
-          <nav>
-            <ul>
-              <li>
-                <a href="#home">Home</a>
-              </li>
-              <li>
-                <a href="#about">About</a>
-              </li>
-              <li>
-                <a href="#gallery">Gallery</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+      <div
+        class="container"
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        "
+      >
+        <h1>
+          <svg
+            class="compass"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="9.5"></circle>
+            <path d="M15.5 8.5l-2 5-5 2 2-5z"></path>
+          </svg>
+          ice &amp; annie
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#trips">Trips</a></li>
+            <li><a href="#footer">Contact</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
-      <!-- Home Section -->
-      <section id="home">
-        <div class="container">
-          <h2>
-            Welcome!
-          </h2>
-          <p>
-            Howdy! This is our memory lanes of trips and restaurants that we love.
+      <!-- Hero -->
+      <section class="hero" id="top">
+        <div class="container hero-inner">
+          <span class="hero-kicker kicker">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="var(--primary)"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M2 16l20-8-8 20-2-9z"></path>
+            </svg>
+            Travel log <span class="dot">&middot;</span> 4 trips logged
+          </span>
+          <h2>Passport in one hand, snack in the other.</h2>
+          <p class="sub">
+            Howdy! This is our memory lane of trips (and restaurants) we love.
           </p>
+          <div class="hero-cta">
+            <a href="#trips" class="btn btn-primary">
+              Explore our trips
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6"></path>
+              </svg>
+            </a>
+            <a href="#about" class="btn btn-ghost">Meet ice &amp; annie</a>
+          </div>
         </div>
-      </section><!-- About Section -->
+      </section>
+      <!-- About / Crew Section -->
       <section id="about">
         <div class="container">
-          <h2>
-            About Us
-          </h2>
-          <p>
-            ✈️ Passport in one hand
-          </p>🍡 Snack in the other
-          <p></p>
-          <div class="container">
-            <div class="gallery-grid">
-              <div class="card">
-                <img src="images/icegpt.png" alt="intarat cook egg">
-                <h3>
-                  intarat cook egg (ice)
-                </h3>
-                <p>
-                  goes by ice, an food connoisseur that can't eat a lot
-                </p>
+          <div class="section-head">
+            <div>
+              <span class="kicker">The crew</span>
+              <h2>Who's behind the passport stamps</h2>
+            </div>
+            <p>
+              Two backpacks, one shared photo roll, and a running list of places
+              worth going back to.
+            </p>
+          </div>
+          <div class="crew">
+            <div class="id-card">
+              <img class="id-photo" src="images/icegpt.png" alt="Ice" />
+              <div class="id-right">
+                <div class="id-top">
+                  <span class="kicker">Passenger 01</span>
+                  <div class="barcode">
+                    <div style="height: 16px"></div>
+                    <div style="height: 10px"></div>
+                    <div style="height: 16px"></div>
+                    <div style="height: 6px"></div>
+                    <div style="height: 14px"></div>
+                    <div style="height: 16px"></div>
+                    <div style="height: 9px"></div>
+                  </div>
+                </div>
+                <div class="id-body">
+                  <h3>intarat cook egg (ice)</h3>
+                  <span class="kicker id-tag">Food connoisseur</span>
+                  <p>
+                    Goes by Ice &mdash; a food connoisseur who somehow can't eat
+                    a lot.
+                  </p>
+                </div>
               </div>
-              <div class="card">
-                <img src="images/anniegpt.png" alt="annie win">
-                <h3>
-                  annie win
-                </h3>
-                <p>
-                  tu nu win, an avid hiker that sings abc
-                </p>
+            </div>
+            <div class="id-card">
+              <img class="id-photo" src="images/anniegpt.png" alt="Annie" />
+              <div class="id-right">
+                <div class="id-top">
+                  <span class="kicker">Passenger 02</span>
+                  <div class="barcode">
+                    <div style="height: 12px"></div>
+                    <div style="height: 16px"></div>
+                    <div style="height: 8px"></div>
+                    <div style="height: 16px"></div>
+                    <div style="height: 10px"></div>
+                    <div style="height: 14px"></div>
+                    <div style="height: 16px"></div>
+                  </div>
+                </div>
+                <div class="id-body">
+                  <h3>annie win</h3>
+                  <span class="kicker id-tag">Avid hiker</span>
+                  <p>
+                    Tu Nu Win &mdash; an avid hiker who sings the ABCs on every
+                    trail.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section><!-- Gallery Section -->
-      <section id="gallery">
+      </section>
+      <!-- Trips Section -->
+      <section id="trips">
         <div class="container">
-          <h2>
-            Gallery
-          </h2>
-          <div class="gallery-grid">
-            <!-- image is formatted in .gallery img -->
-            <div class="card">
-              <a href="pensacola.html" style="text-decoration:none; color:inherit;"><img src="images/IMG_7266.jpeg" alt="Pensacola">
-              <h3>
-                Pensacola
-              </h3>
-              <p>
-                Our first real trip together!
-              </p></a>
+          <div class="section-head">
+            <div>
+              <span class="kicker">The log</span>
+              <h2>Where we've been</h2>
             </div>
-            <div class="card">
-              <a href="alaska.html" style="text-decoration:none; color:inherit;"><img src="images/IMG_8205.jpeg" alt="Alaska">
-              <h3>
-                Alaska
-              </h3>
-              <p>
-                The most unique experience in 7 days
-              </p></a>
-            </div>
-            <div class="card">
-              <a href="colorado.html" style="text-decoration:none; color:inherit;"><img src="images/IMG_9215.jpeg" alt="Colorado">
-              <h3>
-                Colorado
-              </h3>
-              <p>
-                Simply majestic.
-              </p></a>
-            </div>
-            <div class="card">
-              <a href="california.html" style="text-decoration:none; color:inherit;"><img src="images/DJI_20250816_154248_984.JPG" alt="California">
-              <h3>
-                California
-              </h3>
-              <p>
-                Sunshine and stunning coastlines
-              </p></a>
-            </div>
+            <p>Four trips in, and the list keeps growing.</p>
           </div>
-        </div>
-      </section><!-- Contact Section -->
-      <section id="contact">
-        <div class="container">
-          <h2>
-            More
-          </h2>
-          <p>
-            Catch us on instagram @iceandannie
-          </p>
+          <div class="trip-grid">
+            <a class="trip-card" href="pensacola.html">
+              <div class="trip-photo-wrap">
+                <img
+                  class="trip-photo"
+                  src="images/IMG_7266.jpeg"
+                  alt="Pensacola"
+                />
+                <span class="trip-chip">3D 3N &middot; MAR</span>
+              </div>
+              <div class="trip-body">
+                <h3>Pensacola</h3>
+                <p>Our first real trip together!</p>
+              </div>
+            </a>
+            <a class="trip-card" href="alaska.html">
+              <div class="trip-photo-wrap">
+                <img
+                  class="trip-photo"
+                  src="images/IMG_8205.jpeg"
+                  alt="Alaska"
+                />
+                <span class="trip-chip">8D 7N &middot; MAY</span>
+              </div>
+              <div class="trip-body">
+                <h3>Alaska</h3>
+                <p>The most unique experience in 7 days.</p>
+              </div>
+            </a>
+            <a class="trip-card" href="colorado.html">
+              <div class="trip-photo-wrap">
+                <img
+                  class="trip-photo"
+                  src="images/IMG_9215.jpeg"
+                  alt="Colorado"
+                />
+                <span class="trip-chip">6D 5N</span>
+              </div>
+              <div class="trip-body">
+                <h3>Colorado</h3>
+                <p>Simply majestic.</p>
+                <span class="soon">Full story coming soon</span>
+              </div>
+            </a>
+            <a class="trip-card" href="california.html">
+              <div class="trip-photo-wrap">
+                <img
+                  class="trip-photo"
+                  src="images/DJI_20250816_154248_984.JPG"
+                  alt="California"
+                />
+                <span class="trip-chip">5D 4N</span>
+              </div>
+              <div class="trip-body">
+                <h3>California</h3>
+                <p>Sunshine and stunning coastlines.</p>
+                <span class="soon">Full story coming soon</span>
+              </div>
+            </a>
+          </div>
         </div>
       </section>
     </main>
-    <footer>
+    <footer id="footer">
       <div class="container">
-        <p>
-          © 2025 ice and annie dot blog
-        </p>
+        <div>
+          <div class="brand">
+            <svg
+              class="compass"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="9.5"></circle>
+              <path d="M15.5 8.5l-2 5-5 2 2-5z"></path>
+            </svg>
+            <span>ice &amp; annie</span>
+          </div>
+          <p class="meta">EST. 2025</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://instagram.com/iceandannie">
+            @iceandannie
+            <svg
+              viewBox="0 0 24 24"
+              width="13"
+              height="13"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M7 17L17 7M9 7h8v8"></path>
+            </svg>
+          </a>
+          <p>&copy; 2025 ice and annie</p>
+        </div>
       </div>
     </footer>
   </body>
