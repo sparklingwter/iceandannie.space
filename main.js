@@ -1,4 +1,26 @@
-window.addEventListener("DOMContentLoaded", function () {
+async function loadSections() {
+  const includes = document.querySelectorAll("[data-include]");
+
+  await Promise.all(
+    Array.from(includes, async function (include) {
+      const response = await fetch(include.dataset.include);
+
+      if (!response.ok) {
+        throw new Error(`Unable to load ${include.dataset.include}`);
+      }
+
+      include.outerHTML = await response.text();
+    }),
+  );
+}
+
+window.addEventListener("DOMContentLoaded", async function () {
+  await loadSections();
+
+  const tripCount = document.querySelector("[data-trip-count]");
+  const tripCards = document.querySelectorAll("#trips .trip-card");
+  if (tripCount) tripCount.textContent = tripCards.length;
+
   // Only show Return Home button if not on index.html or /
   const isHome =
     window.location.pathname.endsWith("index.html") ||
